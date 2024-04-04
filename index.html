@@ -7,7 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- put form here -->
+    <form novalidate>
+        <p>
+          <label for="mail">
+            <span>Please enter your email address:</span>
+            <input type="email" id="mail" name="mail" required minlength="8" />
+            <span class="error mail-error" aria-live="polite"></span>
+          </label>
+        </p>
+        <p>
+          <label for="country">
+              <span>Please enter your country:</span>
+              <input type="text" id="country" name="country" required/>
+              <span class="error country-error" aria-live="polite"></span>
+          </label>
+        </p>
+        <p>
+          <label for="zipcode">
+              <span>Please enter your zipcode:</span>
+              <input type="number" id="zipcode" name="zipcode" required />
+              <span class="error zipcode-error" aria-live="polite"></span>
+          </label>
+        </p>
+        <p>
+          <label for="password">
+              <span>Please enter your password:</span>
+              <input type="password" id="password" name="password" required />
+              <span class="error password-error" aria-live="polite"></span>
+          </label>
+        </p>
+        <p>
+          <label for="passwordcheck">
+              <span>Please confirm your password:</span>
+              <input type="password" id="passwordcheck" name="passwordcheck" required />
+              <span class="error passwordcheck-error" aria-live="polite"></span>
+          </label>
+        </p>
+        <button>Submit</button>
+    </form>
     <script src="index.js"></script>
 </body>
 </html>
