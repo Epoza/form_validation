@@ -30,6 +30,11 @@ body {
     border-color: #900;
     background-color: #fdd;
   }
+
+  input.valid {
+    border-color: rgb(0, 153, 20);
+    background-color: rgb(232, 255, 221);
+  }
   
   input:focus:invalid {
     outline: none;
